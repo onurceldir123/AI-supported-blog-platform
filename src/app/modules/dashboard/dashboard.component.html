@@ -1,0 +1,43 @@
+<div *ngIf="bigChart.length" fxLayout="row" fxlayoutAlign="space-between center" fxLayoutGap="20px" class="stats-card">
+  <mat-card fxFlex="50">
+    <app-widget-area [data]="bigChart" title="Daily Temperature Values" ytitle = "Temperature (C)"></app-widget-area>
+  </mat-card>
+  <mat-card fxFlex="50">
+    <app-widget-area [data]="bigChart2" title="Daily Air pressure Values" ytitle = "Air Pressure (ATM)" ></app-widget-area>
+  </mat-card>
+</div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+  <div fxFlex="70">
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Temperature 1</th>
+        <th>Temperature 2</th>
+        <th>Air Pressure 1</th>
+        <th>Air Pressure 1</th>
+        <th>Vibration 1</th>
+        <th>Prediction</th>
+      </tr>
+      <tr *ngFor="let data of tableData">
+        <td>{{data['date']}}</td>
+        <td>{{data['TMP_1']}}</td>
+        <td>{{data['TMP_2']}}</td>
+        <td>{{data['GS_1']}}</td>
+        <td>{{data['GS_2']}}</td>
+        <td>{{data['VBR_1']}}</td>
+        <td>Error</td>
+      </tr>
+    </table>
+  </div>
+
+  <div fxFlex="30">
+    <app-widget-pie [data]="pieChart"></app-widget-pie>
+  </div>
+</div>

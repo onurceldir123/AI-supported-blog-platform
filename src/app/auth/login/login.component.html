@@ -1,0 +1,18 @@
+  <div class="center">
+  <mat-card>
+    <mat-card-content>
+        <div class="logincontainer">
+          <form ngNativeValidate  (submit)="onLogin(loginForm)" #loginForm="ngForm">
+            <div class="container">
+              <label><b>EMAIL:</b></label>
+              <input type="email" ngModel placeholder="Enter Email" name="email" #emailInput="ngModel" required email>
+              <br><br>
+              <label><b>PASSWORD:</b></label>
+              <input type="password" ngModel placeholder="Enter Password" name="password" #passwordInput="ngModel"  required>
+              <button mat-raised-button color="primary" type="submit">LOGIN</button>
+            </div>
+          </form>
+        </div>
+  </mat-card-content>
+</mat-card>
+</div>

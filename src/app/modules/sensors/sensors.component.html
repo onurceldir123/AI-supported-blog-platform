@@ -1,0 +1,110 @@
+
+
+
+<div fxLayout="row" fxlayoutAlign="space-between center" fxLayoutGap="20px" class="stats-card">
+  <mat-card>
+    <app-widget-gauge needleValue={{temperature1}} bottomLabel={{temperature1}} name="Temperature 1 (C)"></app-widget-gauge>
+  </mat-card>
+  <mat-card>
+    <app-widget-gauge needleValue={{temperature2}} bottomLabel={{temperature2}} name='Temperature 2 (C)'></app-widget-gauge>
+  </mat-card>
+  <mat-card>
+    <app-widget-gauge needleValue={{gas1}} bottomLabel={{gas1}} name='Gas Sensor 1 (ATM)'></app-widget-gauge>
+  </mat-card>
+</div>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+
+<div fxLayout="row" fxlayoutAlign="space-between center" fxLayoutGap="20px" class="stats-card">
+<mat-card>
+  <app-widget-gauge needleValue={{gas2}} bottomLabel={{gas2}} name='Gas Sensor 2'></app-widget-gauge>
+</mat-card>
+<mat-card>
+  <app-widget-vibration needleValue={{vbr1+50}} bottomLabel={{vbr1}} name='Vibration Sensor'></app-widget-vibration>
+</mat-card>
+<mat-card *ngIf="predictionData.predict==1" style="width:300px; background-color: rgb(253, 71, 71); color: white">
+  <div>
+    <span style="font-size: 20px;">ERROR!</span>
+  </div>
+
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+
+  <div>
+    <table>
+      <tr>
+        <th>SENSOR</th>
+        <th>VALUE</th>
+      </tr>
+      <tr>
+        <td>Temperature sensor 1 (C)</td>
+        <td>{{predictionData.input['TMP_1']}}</td>
+      </tr>
+      <tr>
+        <td>Temperature sensor 2 (C)</td>
+        <td>{{predictionData.input['TMP_2']}}</td>
+      </tr>
+      <tr>
+        <td>Air Pressure Sensor 1 (ATM)</td>
+        <td>{{predictionData.input['GS_1']}} </td>
+      </tr>
+      <tr>
+        <td>Air Pressure Sensor 2 (ATM)</td>
+        <td>{{predictionData.input['GS_2']}}</td>
+      </tr>
+      <tr>
+        <td>Vibration Sensor 1 </td>
+        <td>{{predictionData.input['VBR_1']}}</td>
+      </tr>
+    </table>
+  </div>
+</mat-card>
+<mat-card *ngIf="predictionData.predict==0" style="width:300px; color: Black">
+  <div>
+    <span style="font-size: 20px;">Running!</span>
+  </div>
+
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+
+  <div>
+    <table>
+      <tr>
+        <th>SENSOR</th>
+        <th>VALUE</th>
+      </tr>
+      <tr>
+        <td>Temperature sensor 1</td>
+        <td>{{predictionData.input['TMP_1']}}</td>
+      </tr>
+      <tr>
+        <td>Temperature sensor 2</td>
+        <td>{{predictionData.input['TMP_2']}}</td>
+      </tr>
+      <tr>
+        <td>Air Pressure Sensor 1</td>
+        <td>{{predictionData.input['GS_1']}} </td>
+      </tr>
+      <tr>
+        <td>Air Pressure Sensor 2</td>
+        <td>{{predictionData.input['GS_2']}}</td>
+      </tr>
+      <tr>
+        <td>Vibration Sensor 1 </td>
+        <td>{{predictionData.input['VBR_1']}}</td>
+      </tr>
+    </table>
+  </div>
+</mat-card>
+</div>
+<br>
+
+<mat-divider></mat-divider>
+
+<br>

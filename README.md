@@ -11,6 +11,12 @@ MEAN stack was used in development phase. While developing artificial intelligen
 - Node.js <br/>
 - Tensorflow(Keras)
 - Flask
+## Purposes
+My aims to develop this project are:<br/>
+- increase my html, css, javascript skills<br/> 
+- recognition of technologies such as nodeJS, angular <br/> 
+- artificial intelligence supported web development<br/>
+- natural language processing and deep learning practice.<br/>
 ## Sample Images from the application
 Login/Signup <br/>
 ![Untitled](https://user-images.githubusercontent.com/51136866/93733945-05656a80-fbe0-11ea-8989-ed49f1efcc5a.png)<br/>

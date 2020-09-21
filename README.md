@@ -1,27 +1,15 @@
-# Pdapplication
+## AI supported Blog Platform
+Microblog platform(MBP) is a blog platform where users can write articles on topics they have determined and read what others have written. Microblog platform can be used on both web and mobile.
+# AI support
+Microblog platform is AI supported. When users enter the homepage, they come across articles suggested by artificial intelligence. The article that best matches the user experience is in the 'Suggested' part. The most liked article by users who show similar features during the day is in the 'Most liked' section
+Recommendations to the user are created according to the articles the user likes, reads and writes. each user's home-page experience is different. Artificial intelligence offers each user an experience according to their usage.
+Tools
+MEAN stack was used in development phase. The MEAN stack consists,
+- MongoDB
+- ExpressJS 
+- Angular
+- Node.js.
+While developing artificial intelligence, natural language processing and deep learning methods were used.
+- Tensorflow(Keras)
+- Flask
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

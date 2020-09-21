@@ -2,7 +2,7 @@
 Microblog platform(MBP) is a blog platform where users can write articles on topics they have determined and read what others have written. Microblog platform can be used on both web and mobile.
 ## AI support
 Microblog platform is AI supported. When users enter the homepage, they come across articles suggested by artificial intelligence. The article that best matches the user experience is in the 'Suggested' part. The most liked article by users who show similar features during the day is in the 'Most liked' section <br/>
-Recommendations to the user are created according to the articles the user likes, reads and writes. each user's home-page experience is different. Artificial intelligence offers each user an experience according to their usage.
+Recommendations to the user are created according to the articles the user likes, reads and writes. each user's home-page experience is different. Artificial intelligence offers each user a content according to their use.
 ## Tools
 MEAN stack was used in development phase. While developing artificial intelligence, Flask and Tensorflow(Python) used.
 - MongoDB

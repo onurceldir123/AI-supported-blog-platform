@@ -13,7 +13,7 @@ MEAN stack was used in development phase. While developing artificial intelligen
 - Flask
 ## Sample Images from the application
 Login/Signup
-
+![Untitled](https://user-images.githubusercontent.com/51136866/93733945-05656a80-fbe0-11ea-8989-ed49f1efcc5a.png)
 Home page
  
 Read more…

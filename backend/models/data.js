@@ -8,7 +8,7 @@ const dataSchema = mongoose.Schema({
   GS_2: { type: Number, required: true },
   VBR_1: { type: Number, required: true },
   date: {type: Date, required: true},
-  prediction: {type: String, required: true}
+  prediction: {type: String, required: true} // sa
 });
 
 module.exports = mongoose.model('5ee003b85bb3776b83e6e682', dataSchema);
